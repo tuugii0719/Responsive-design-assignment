@@ -1,0 +1,40 @@
+.card{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+body{
+    max-width: 1000px;
+    background-color: lightgrey;
+    margin: auto;
+}
+.img{
+    width: 30%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+a{
+    color: green;
+    text-align: left;
+}
+h3{
+    color: grey;
+}
+.text{
+    padding:20px
+}
+@media (max-width:640px){
+    .card{
+        flex-wrap: wrap;
+    }
+    .order{
+        order: -1;
+    }
+    .img{
+        width: 100%;
+    }
+}

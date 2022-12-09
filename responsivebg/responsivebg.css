@@ -1,0 +1,59 @@
+@media only screen and (max-width: 576px) {
+    .square {
+      background-color: green;
+    }
+    .text::after{
+      content: " xs ( extra small ) < 576px";
+    }
+  }
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    .square {
+      background-color: burlywood;
+    }
+    .text::after{
+      content: "576<  sm  (small) < 768px";
+    }
+  }
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .square {
+      background-color: aqua;
+    }
+    .text::after{
+      content: "768px <  md (medium) < 992px";
+    }
+  }
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+        .square {
+          background-color: rgb(208, 172, 177);
+        }
+        .text::after{
+          content: "992 px<  lg (large) 1200px < 768px";
+        }
+  }
+@media only screen and (min-width:1200px) and (max-width: 1400px) {
+            .square {
+              background-color: red;
+            }
+            .text::after{
+              content: "1200 px<  xl (extra large)< 1400px ";
+            }
+
+        }
+@media only screen and (min-width:1400px) {
+                .square {
+                  background-color: rgb(243, 156, 170);
+                }
+                .text::after{
+                  content: "1200 px<  xxl (extra extra large)< 1400px ";
+                }
+
+            }
+.square{
+    height: 144vh;
+    width:100%;
+}
+.text{
+  margin: 50%;
+  position: absolute;
+  width: 500px;
+}
